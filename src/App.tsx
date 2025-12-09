@@ -248,11 +248,11 @@ function App() {
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-white animate-fade-in max-w-3xl">
             <h1 className="text-6xl font-bold mb-6 leading-tight">
-              Maharashtra's <span className="text-gradient">Finest Produce</span>
+              Fresh Fruits at <span className="text-gradient">Best Rates</span> in the World
             </h1>
             <p className="text-2xl mb-8 text-gray-100 leading-relaxed">
-              Export quality fruits and vegetables from the heart of India. 
-              Premium agricultural products for global markets.
+              Premium export quality fruits from India at unbeatable wholesale prices. 
+              Direct from farm to global markets - Quality you can trust, rates you'll love!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
@@ -277,14 +277,91 @@ function App() {
         </div>
       </div>
 
+      {/* Why Choose Us / Benefits Section - NEW */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-4 text-gradient">Why FreshExports Offers the Best Rates</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our direct farm-to-export model and efficient supply chain ensure unbeatable prices without compromising quality
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="card-enhanced text-center p-8 hover:shadow-2xl transition-all duration-300">
+              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Competitive Wholesale Pricing</h3>
+              <p className="text-gray-600">Best rates guaranteed! Direct sourcing eliminates middlemen, passing savings to you. Bulk discounts available.</p>
+            </div>
+            
+            <div className="card-enhanced text-center p-8 hover:shadow-2xl transition-all duration-300">
+              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">ISO Certified Quality</h3>
+              <p className="text-gray-600">Premium export quality fruits. APEDA & FSSAI certified. Rigorous quality control at every stage.</p>
+            </div>
+            
+            <div className="card-enhanced text-center p-8 hover:shadow-2xl transition-all duration-300">
+              <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Globe className="w-10 h-10 text-purple-600" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Worldwide Shipping</h3>
+              <p className="text-gray-600">Temperature-controlled logistics. Deliveries to 50+ countries. Fresh fruits guaranteed at destination.</p>
+            </div>
+            
+            <div className="card-enhanced text-center p-8 hover:shadow-2xl transition-all duration-300">
+              <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Fast Processing</h3>
+              <p className="text-gray-600">24-48 hour order processing. Quick quote turnaround. Efficient documentation and customs clearance.</p>
+            </div>
+            
+            <div className="card-enhanced text-center p-8 hover:shadow-2xl transition-all duration-300">
+              <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Farm Fresh Quality</h3>
+              <p className="text-gray-600">Handpicked from premium farms. No chemicals or preservatives. Organic options available.</p>
+            </div>
+            
+            <div className="card-enhanced text-center p-8 hover:shadow-2xl transition-all duration-300">
+              <div className="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">B2B Support</h3>
+              <p className="text-gray-600">Dedicated account managers. Custom packaging solutions. Flexible payment terms for bulk orders.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Products Section */}
       <section id="products" className="py-20 bg-gradient-to-br from-gray-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4 text-gradient">Our Premium Products</h2>
+            <h2 className="text-5xl font-bold mb-4 text-gradient">Fresh Fruits at World's Best Rates</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Handpicked, export-quality fruits and vegetables from Maharashtra's finest farms
+              Premium export-quality fresh fruits at competitive wholesale prices. Direct from Maharashtra's finest farms to your doorstep worldwide.
             </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-4">
+              <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">ISO Certified</span>
+              <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">APEDA Approved</span>
+              <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-semibold">Best Wholesale Prices</span>
+              <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-semibold">Worldwide Shipping</span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product, index) => (
