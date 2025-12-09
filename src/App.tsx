@@ -522,7 +522,7 @@ function App() {
                   <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center">
                     <Phone className="w-4 h-4" />
                   </div>
-                  <span className="text-green-200">+91 987 654 3210</span>
+                  <span className="text-green-200">+91 987 322 1233</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center">
