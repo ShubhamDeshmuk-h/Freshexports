@@ -43,25 +43,33 @@ function App() {
       name: "Kolhapur Tomatoes",
       price: "₹40/kg",
       image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600",
-      category: "Vegetables"
+      category: "Vegetables",
+      exportPrice: "$1.5/kg",
+      badge: "Fresh"
     },
     {
       name: "Onion",
       price: "₹25/kg",
       image: "https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "Vegetables"
+      category: "Vegetables",
+      exportPrice: "$0.8/kg",
+      badge: "Low Price"
     },
     {
       name: "Green Peas",
       price: "₹60/kg",
       image: "https://images.unsplash.com/photo-1690023614293-ac2ba2eb0731?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "Vegetables"
+      category: "Vegetables",
+      exportPrice: "$1.8/kg",
+      badge: "Fresh"
     },
     {
       name: "Bitter Gourd",
       price: "₹45/kg",
       image: "https://images.unsplash.com/photo-1739903760973-4731a8e79a03?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      category: "Vegetables"
+      category: "Vegetables",
+      exportPrice: "$1.3/kg",
+      badge: "Organic"
     }
   ];
 
@@ -369,20 +377,31 @@ function App() {
                 <div className="relative overflow-hidden">
                   <img 
                     src={product.image} 
-                    alt={product.name} 
+                    alt={`${product.name} - Fresh export quality at best rates`} 
                     className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" 
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                   <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                     {product.category}
                   </div>
+                  {product.badge && (
+                    <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
+                      {product.badge}
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-gray-800">{product.name}</h3>
-                  <p className="text-3xl font-bold text-green-600 mb-2">{product.price}</p>
+                  <div className="mb-3">
+                    <p className="text-2xl font-bold text-green-600">{product.price}</p>
+                    <p className="text-lg text-blue-600 font-semibold">Export: {product.exportPrice}</p>
+                  </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">Export Quality</span>
+                    <span className="text-sm text-gray-500">✓ Export Quality</span>
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="mt-3 pt-3 border-t border-gray-200">
+                    <span className="text-xs text-gray-600">Wholesale rates • Bulk orders welcome</span>
                   </div>
                 </div>
               </div>
@@ -448,6 +467,78 @@ function App() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials & Stats Section - NEW */}
+      <section className="py-20 bg-gradient-to-br from-green-600 to-green-800 text-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-4">Trusted by Businesses Worldwide</h2>
+            <p className="text-xl text-green-100 max-w-3xl mx-auto">
+              Join thousands of satisfied customers who trust FreshExports for premium quality at best rates
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+            <div className="text-center p-6 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl">
+              <div className="text-5xl font-bold mb-2">50+</div>
+              <div className="text-lg text-green-100">Countries Served</div>
+            </div>
+            <div className="text-center p-6 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl">
+              <div className="text-5xl font-bold mb-2">1000+</div>
+              <div className="text-lg text-green-100">Happy Clients</div>
+            </div>
+            <div className="text-center p-6 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl">
+              <div className="text-5xl font-bold mb-2">25%</div>
+              <div className="text-lg text-green-100">Lower Prices</div>
+            </div>
+            <div className="text-center p-6 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl">
+              <div className="text-5xl font-bold mb-2">4.9/5</div>
+              <div className="text-lg text-green-100">Customer Rating</div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-lg mb-4 italic">"Best rates in the market! Quality is outstanding and delivery was on time. FreshExports is now our go-to supplier for all fresh fruit imports."</p>
+              <div className="font-semibold">- Ahmed Al-Mansour</div>
+              <div className="text-sm text-green-200">Dubai Fresh Mart, UAE</div>
+            </div>
+
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-lg mb-4 italic">"Incredible value for money! The Alphonso mangoes are premium quality at wholesale prices. Customer service is excellent too!"</p>
+              <div className="font-semibold">- Jennifer Williams</div>
+              <div className="text-sm text-green-200">Organic Grocers, London UK</div>
+            </div>
+
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-lg mb-4 italic">"We've tried many suppliers but FreshExports offers unbeatable combination of quality and price. ISO certified and always fresh!"</p>
+              <div className="font-semibold">- Tan Wei Ming</div>
+              <div className="text-sm text-green-200">Singapore Fresh Co., Singapore</div>
+            </div>
           </div>
         </div>
       </section>
@@ -564,9 +655,14 @@ function App() {
                 <span className="ml-2 text-2xl font-bold">FreshExports</span>
               </div>
               <p className="text-green-200 leading-relaxed">
-                Premium quality fruits and vegetables from Maharashtra for global markets. 
-                Your trusted partner in agricultural exports.
+                Fresh fruits at the best rates in the world! Premium export quality mangoes, oranges, pomegranates, and grapes from India. ISO certified, APEDA approved, worldwide shipping available.
               </p>
+              <div className="mt-4 space-y-2 text-sm text-green-300">
+                <p>🏆 ISO Certified Exporter</p>
+                <p>💰 Best Wholesale Rates</p>
+                <p>🌍 Shipping to 50+ Countries</p>
+                <p>⭐ 4.9/5 Customer Rating</p>
+              </div>
               <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300">
                   <Facebook className="w-5 h-5" />
@@ -645,8 +741,13 @@ function App() {
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-green-700">
+            <div className="mb-6">
+              <p className="text-green-200 text-sm leading-relaxed">
+                <strong>FreshExports</strong> - Leading exporter of fresh fruits at competitive wholesale prices. Specializing in premium Alphonso mangoes, Nagpur oranges, Indian pomegranates, and Nashik grapes. Direct from farm to global markets. Best rates guaranteed | ISO certified | APEDA approved | Worldwide shipping | Bulk orders welcome | B2B fresh fruit supplier | Export quality produce | Competitive pricing | Temperature-controlled logistics | Food safety certified
+              </p>
+            </div>
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-green-200 mb-4 md:mb-0">© 2025 FreshExports. All rights reserved.</p>
+              <p className="text-green-200 mb-4 md:mb-0">© 2025 FreshExports. All rights reserved. | Fresh Fruits at Best Rates Worldwide</p>
               <div className="flex space-x-6 text-sm text-green-300">
                 <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
                 <a href="#" className="hover:text-white transition-colors duration-300">Terms of Service</a>

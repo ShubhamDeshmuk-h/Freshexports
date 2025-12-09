@@ -1,0 +1,25 @@
+# robots.txt for FreshExports - Fresh Fruits at Best Rates
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.cleansera.tech/sitemap.xml
+
+# Block access to admin areas if any
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
