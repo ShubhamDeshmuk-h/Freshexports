@@ -1,6 +1,6 @@
 {
-  "name": "Fresh Exports - Fresh Fruits at Best Rates",
-  "short_name": "Fresh Exports",
+  "name": "FreshExports - Fresh Fruits at Best Rates",
+  "short_name": "FreshExports",
   "description": "Premium export quality fresh fruits at competitive wholesale prices. ISO certified Indian fruit exporter shipping worldwide.",
   "start_url": "/",
   "display": "standalone",
@@ -54,7 +54,7 @@
       "src": "/screenshots/home.jpg",
       "sizes": "1280x720",
       "type": "image/jpeg",
-      "label": "Fresh Exports Home - Fresh fruits at best rates"
+      "label": "FreshExports Home - Fresh fruits at best rates"
     },
     {
       "src": "/screenshots/products.jpg",

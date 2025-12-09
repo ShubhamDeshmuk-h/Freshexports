@@ -1,4 +1,4 @@
-# robots.txt for Fresh Exports - Fresh Fruits at Best Rates
+# robots.txt for FreshExports - Fresh Fruits at Best Rates
 # Allow all search engines to crawl the site
 
 User-agent: *

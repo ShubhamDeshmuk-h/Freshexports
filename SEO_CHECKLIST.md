@@ -1,4 +1,4 @@
-# SEO Checklist for Fresh Exports Website
+# SEO Checklist for FreshExports Website
 
 ## ✅ On-Page SEO (Completed)
 
