@@ -211,7 +211,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Leaf className="w-8 h-8" />
-              <span className="ml-2 text-xl font-bold">FreshExports</span>
+              <span className="ml-2 text-xl font-bold">Fresh Exports</span>
             </div>
             
             <div className="hidden md:flex space-x-8">
@@ -289,7 +289,7 @@ function App() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4 text-gradient">Why FreshExports Offers the Best Rates</h2>
+            <h2 className="text-5xl font-bold mb-4 text-gradient">Why Fresh Exports Offers the Best Rates</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our direct farm-to-export model and efficient supply chain ensure unbeatable prices without compromising quality
             </p>
@@ -477,7 +477,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-4">Trusted by Businesses Worldwide</h2>
             <p className="text-xl text-green-100 max-w-3xl mx-auto">
-              Join thousands of satisfied customers who trust FreshExports for premium quality at best rates
+              Join thousands of satisfied customers who trust Fresh Exports for premium quality at best rates
             </p>
           </div>
           
@@ -509,7 +509,7 @@ function App() {
                   </svg>
                 ))}
               </div>
-              <p className="text-lg mb-4 italic">"Best rates in the market! Quality is outstanding and delivery was on time. FreshExports is now our go-to supplier for all fresh fruit imports."</p>
+              <p className="text-lg mb-4 italic">"Best rates in the market! Quality is outstanding and delivery was on time. Fresh Exports is now our go-to supplier for all fresh fruit imports."</p>
               <div className="font-semibold">- Ahmed Al-Mansour</div>
               <div className="text-sm text-green-200">Dubai Fresh Mart, UAE</div>
             </div>
@@ -535,7 +535,7 @@ function App() {
                   </svg>
                 ))}
               </div>
-              <p className="text-lg mb-4 italic">"We've tried many suppliers but FreshExports offers unbeatable combination of quality and price. ISO certified and always fresh!"</p>
+              <p className="text-lg mb-4 italic">"We've tried many suppliers but Fresh Exports offers unbeatable combination of quality and price. ISO certified and always fresh!"</p>
               <div className="font-semibold">- Tan Wei Ming</div>
               <div className="text-sm text-green-200">Singapore Fresh Co., Singapore</div>
             </div>
@@ -574,7 +574,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Email</p>
-                      <p className="text-gray-600">contact@freshexports.com</p>
+                      <p className="text-gray-600">contact@Fresh Exports.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -652,7 +652,7 @@ function App() {
             <div className="space-y-6">
               <div className="flex items-center">
                 <Leaf className="w-8 h-8 text-green-300" />
-                <span className="ml-2 text-2xl font-bold">FreshExports</span>
+                <span className="ml-2 text-2xl font-bold">Fresh Exports</span>
               </div>
               <p className="text-green-200 leading-relaxed">
                 Fresh fruits at the best rates in the world! Premium export quality mangoes, oranges, pomegranates, and grapes from India. ISO certified, APEDA approved, worldwide shipping available.
@@ -701,7 +701,7 @@ function App() {
                   <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center">
                     <Mail className="w-4 h-4" />
                   </div>
-                  <span className="text-green-200">contact@freshexports.com</span>
+                  <span className="text-green-200">contact@Fresh Exports.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center">
@@ -713,7 +713,7 @@ function App() {
                   <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center">
                     <Globe className="w-4 h-4" />
                   </div>
-                  <span className="text-green-200">www.freshexports.com</span>
+                  <span className="text-green-200">www.Fresh Exports.com</span>
                 </div>
               </div>
             </div>
@@ -743,11 +743,11 @@ function App() {
           <div className="mt-12 pt-8 border-t border-green-700">
             <div className="mb-6">
               <p className="text-green-200 text-sm leading-relaxed">
-                <strong>FreshExports</strong> - Leading exporter of fresh fruits at competitive wholesale prices. Specializing in premium Alphonso mangoes, Nagpur oranges, Indian pomegranates, and Nashik grapes. Direct from farm to global markets. Best rates guaranteed | ISO certified | APEDA approved | Worldwide shipping | Bulk orders welcome | B2B fresh fruit supplier | Export quality produce | Competitive pricing | Temperature-controlled logistics | Food safety certified
+                <strong>Fresh Exports</strong> - Leading exporter of fresh fruits at competitive wholesale prices. Specializing in premium Alphonso mangoes, Nagpur oranges, Indian pomegranates, and Nashik grapes. Direct from farm to global markets. Best rates guaranteed | ISO certified | APEDA approved | Worldwide shipping | Bulk orders welcome | B2B fresh fruit supplier | Export quality produce | Competitive pricing | Temperature-controlled logistics | Food safety certified
               </p>
             </div>
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-green-200 mb-4 md:mb-0">© 2025 FreshExports. All rights reserved. | Fresh Fruits at Best Rates Worldwide</p>
+              <p className="text-green-200 mb-4 md:mb-0">© 2025 Fresh Exports. All rights reserved. | Fresh Fruits at Best Rates Worldwide</p>
               <div className="flex space-x-6 text-sm text-green-300">
                 <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
                 <a href="#" className="hover:text-white transition-colors duration-300">Terms of Service</a>
